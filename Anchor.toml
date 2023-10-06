@@ -1,0 +1,16 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+reward_program = "37zJ7z5BXE6vBaDHYEAfKxYfYdMFKdzT2qfq7aJMqzNX"
+coupon_ext = "CuhLQG6iDoB8qFjDBHe36ZWkapy2pyeatX6RcQg2hKeC"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/home/justinlee/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
